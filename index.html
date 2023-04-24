@@ -7,6 +7,21 @@
 
 
 	<style>
+
+		/*Root is going to be used to define color variables*/
+		:root{
+			--bgcolor:#FDE2F3;
+			--textcolor:#2A2F4F;
+		}
+
+		body{
+			background-color:var(--bgcolor);
+			margin: 0px;
+		}
+
+		.content{
+			margin:10px;
+		}
 		.banger{
 			border:5px solid black;
 
@@ -15,30 +30,93 @@
 			overflow-y:scroll;
 
 			text-align: center;
+			color:var(--textcolor);
 			padding: 10px;
+		}
+
+		footer{
+			background-color:#2A2F4F;
+			color:#FDE2F3;
+			padding:10px;
+			text-align: center;
+		}
+
+		.SongRecs,.AlbumRecs{
+			display:flex;
+			height:300px;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+			gap: 10px;
 		}
 
 	</style>
 </head>
 <body>
+
+	<div class="content">
+		
 	<h1>Dedicated to my banger of the day</h1>
-
 	<h2>Songs</h2>
-	<div class="banger">
-		<h3>Song Title</h3>
-		<p>artist</p>
-		<p>year</p>
-		<p>date</p>
-		<p> <a href="" target="_blank">Link to Song</a></p>
+	<div class="SongRecs">
+		
+		
+
+		<div class="banger">
+			<h3>Song Title</h3>
+			<p>artist</p>
+			<p>year</p>
+			<p>date</p>
+			<p> <a href="" target="_blank">Link to Song</a></p>
+			<p>Notes:</p>
+		</div>
+
+		<div class="banger">
+			<h3>Children of the City</h3>
+			<p>Mili</p>
+			<p>2022</p>
+			<p>2023/04/24</p>
+			<p><a href="https://www.youtube.com/watch?v=uzG5JFreTWQ" target="_blank">Link to Song</a></p>
+			<p>Notes: From Project Moon's Library of Ruina</p>
+		</div>
+	</div>
+	<h2>Albums</h2>
+	<div class="AlbumRecs">
+		
+
+		<div class="banger">
+			<h3>Album Name</h3>
+			<p>artist</p>
+			<p>year</p>
+			<p> <a href="" target="_blank">Link to Song</a></p>
+			<p>Notes:</p>
+		</div>
+
+		<div class="banger">
+			<h3>Vessels</h3>
+			<p>Starset</p>
+			<p>2017</p>
+			<p> <a href="https://www.youtube.com/watch?v=XOxQaKAO6rU" target="_blank">Link to 
+			Album</a></p>
+			<p>Notes:</p>
+		</div>
+		<div class="banger">
+			<h3>Perfect Blue</h3>
+			<p>DJ Okawari</p>
+			<p>2018</p>
+			<p> <a href="https://www.youtube.com/watch?v=QoL4NHBpal4" target="_blank">Link to 
+			Album</a></p>
+			<p>Notes:</p>
+		</div>
 	</div>
 
-	<div class="banger">
-		<h3>Children of the City</h3>
-		<p>Mili</p>
-		<p>2022</p>
-		<p>2023/04/24</p>
-		<p><a href="https://www.youtube.com/watch?v=uzG5JFreTWQ" target="_blank">Link to Song</a></p>
-		<p>Notes: From Project Moon's Library of Ruina</p>
+
 	</div>
+	
+	<footer>
+		<a href="https://colorhunt.co/palette/2a2f4f917fb3e5beecfde2f3" target="_blank">Colors courtesy of ColorHunt</a>
+		<a href="https://github.com/Staartline/" target="_blank">Staartline Github</a>
+		<p class="footerp">Moderated by Staartline 2023</p>
+	</footer>
 </body>
 </html>
