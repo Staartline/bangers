@@ -1,0 +1,48 @@
+/*Root is going to be used to define color variables*/
+		:root{
+			--bgcolor:#FDE2F3;
+			--textcolor:#2A2F4F;
+			--itemcolor:#E5BEEC;
+		}
+
+		body{
+			background-color:var(--bgcolor);
+			margin: 0px;
+
+			font-family: 'Noto Sans', sans-serif;;
+		}
+
+		.content{
+			margin:10px;
+			text-align: center;
+		}
+		.banger{
+			border:3px double black;
+			border-radius: 5%;
+			background-color: var(--itemcolor);
+
+			width:200px;
+			height:200px;
+			overflow-y:scroll;
+
+			text-align: center;
+			color:var(--textcolor);
+			padding: 10px;
+		}
+
+		footer{
+			background-color:#2A2F4F;
+			color:#FDE2F3;
+			padding:10px;
+			text-align: center;
+		}
+
+		.SongRecs,.AlbumRecs{
+			display:flex;
+			flex-wrap:wrap;
+			min-height:300px;
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+			gap: 10px;
+		}
